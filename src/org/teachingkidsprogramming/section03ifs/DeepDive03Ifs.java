@@ -2,6 +2,7 @@ package org.teachingkidsprogramming.section03ifs;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
 @SuppressWarnings("unused")
 public class DeepDive03Ifs
@@ -223,6 +224,48 @@ public class DeepDive03Ifs
     }
     Assert.assertEquals(___, dessert);
   }
+  @Test
+  public void cyoaWakeUpTst() throws Exception
+  {
+    String result = MessageBox.askForTextInput("One morning the Tortoise woke up in a dream.");
+    Assert.assertEquals(result, "wake up");
+  }
+  @Test
+  public void cyoaIncorrectInputTest() throws Exception
+  {
+    String result = MessageBox.askForTextInput("Do you want to 'wake up' or 'explore' the dream?");
+    Assert.assertEquals("", result);
+  }
+  @Test
+  public void ifStatementsAreCool() throws Exception
+  {
+    String teacherSays = "may";
+    if (______)
+    {
+      teacherSays = "can";
+    }
+    Assert.assertEquals("may", teacherSays);
+  }
+  @Test
+  public void ifStatement() throws Exception
+  {
+    int answer = 5;
+    if (_____)
+    {
+      answer = 6;
+    }
+    Assert.assertEquals(5, answer);
+  }
+  @Test
+  public void ifStatement2() throws Exception
+  {
+    String drink = "Gatorade";
+    if (!_______)
+    {
+      drink = "Pickle Juice";
+    }
+    Assert.assertEquals("Gatorade", drink);
+  }
   /**
    * Ignore the following, It's needed to run the deep dive
    * 
@@ -236,10 +279,11 @@ public class DeepDive03Ifs
    * 
    * 
    */
-  public boolean _____  = false;
-  public boolean ______ = true;
-  public String  ___    = "You need to fill in the blank ___";
-  public Integer ____   = null;
+  public boolean _____   = false;
+  public boolean ______  = true;
+  public boolean _______ = !true;
+  public String  ___     = "You need to fill in the blank ___";
+  public Integer ____    = null;
   public String ___()
   {
     return ___;
