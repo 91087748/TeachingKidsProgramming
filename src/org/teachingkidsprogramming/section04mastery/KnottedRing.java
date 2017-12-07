@@ -16,7 +16,6 @@ public class KnottedRing
       Tortoise.setPenColor(ColorWheel.getNextColor());
       drawOctagonWithOverlap();
       Tortoise.turn(360 / 30);
-      //       Turn the tortoise 5 more degrees to the right --#11
       Tortoise.turn(5);
     }
   }

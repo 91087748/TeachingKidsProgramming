@@ -24,6 +24,7 @@ public class SpiderWeb
     //            ------------- Recipe for drawTriangle --#4.2
     //            Do the following 3 times --#3.1
     //                Move the tortoise the current length (of the line) --#1.1
+    Tortoise.move(10.5);
     //                Turn the tortoise 1/3rd of 360 degrees --#2
     //            End Repeat --#3.2
     //            ------------- End of drawTriangle recipe --#4.3
